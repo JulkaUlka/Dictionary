@@ -2,6 +2,7 @@ import React from "react";
 import Meaning from "./Meaning.js";
 
 export default function Results(props) {
+  console.log(props.results.word);
   if (props.results) {
     return (
       <div className="Results">
