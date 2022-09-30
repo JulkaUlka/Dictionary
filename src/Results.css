@@ -3,11 +3,6 @@
   text-transform: capitalize;
   color: rgb(56, 28, 83);
 }
-.Results section {
-  box-shadow: 0 30px 50px rgb(65 50 100 / 8%);
-  border-radius: 10px;
-  margin-top: 10px;
-  padding: 30px;
-  background-color: var(--bs-body-bg);
-  opacity: 0.8;
+.Results h4 {
+  color: rgb(56, 28, 83);
 }
