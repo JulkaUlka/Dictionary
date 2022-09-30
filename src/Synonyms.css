@@ -1,0 +1,15 @@
+.Synonyms ul {
+  margin: 0;
+  padding-left: 0px;
+}
+
+.Synonyms li {
+  display: inline-block;
+  margin: 14px 20px 0 0;
+  padding: 1px 8px 3px;
+  border: solid 1px var(--accent-color);
+  border-radius: 18px;
+  text-transform: capitalize;
+  color: rgb(233, 0, 163);
+  font-weight: 600;
+}

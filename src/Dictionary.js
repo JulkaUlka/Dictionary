@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import "./Dictionary.css";
 import axios from "axios";
 import Results from "./Results.js";
@@ -23,27 +23,20 @@ export default function Dictionary() {
 
   return (
     <div>
-      <form onSubmit={search} className="searchingForm">
-        <div class="input-group input-group-lg">
-          <input
-            type="search"
-            placeholder="What are you looking for..."
-            onChange={handleSubmit}
-            className="form-control"
-            aria-label="Sizing example input"
-            aria-describedby="inputGroup-sizing-lg"
-          />
-          <input
-            type="submit"
-            value="Search"
-            className="input-group-text"
-            id="inputGroup-sizing-lg"
-          />
-        </div>
-      </form>
-      <div>
-        <Results results={results} />
-      </div>
+      <section>
+        <form onSubmit={search} className="searchingForm">
+          <div class="input-group input-group-lg">
+            <input
+              type="search"
+              placeholder="What word do you want to look up?"
+              onChange={handleSubmit}
+              className="form-control"
+            />
+          </div>
+        </form>
+      </section>
+
+      <Results results={results} />
     </div>
   );
 }
